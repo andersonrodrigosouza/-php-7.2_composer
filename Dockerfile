@@ -20,6 +20,14 @@ RUN apt-get update && apt-get install -my \
   git \
   zip
 
+RUN apt-get update && apt-get install -my \
+  apt-utils \
+  libterm-readline-gnu-perl
+
+RUN apt-get update && apt-get install -my \
+  nodejs \
+  npm
+
 RUN mkdir /run/php
 RUN mkdir -p /var/www
 
